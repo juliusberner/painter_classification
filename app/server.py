@@ -12,22 +12,8 @@ from fastai.vision import *
 export_file_url = 'https://drive.google.com/uc?export=download&id=1wcHuNn2sUIWj5K5hu4SZKC6e8zcxKZBw'
 export_file_name = 'export.pkl'
 
-classes = ['bruegel',
- 'cezanne',
- 'davinci',
- 'durer',
- 'klimt',
- 'michelangelo',
- 'monet',
- 'munch',
- 'picasso',
- 'pollock',
- 'raphael',
- 'rembrandt',
- 'rubens',
- 'tintoretto',
- 'titian',
- 'vangogh']
+classes = ['Bruegel','Cezanne','DaVinci','Durer','Klimt','Michelangelo','Monet','Munch','Picasso','Pollock','Raphael','Rembrandt','Rubens',
+           'Tintoretto','Titian','VanGogh']
 
 path = Path(__file__).parent
 
