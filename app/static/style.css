@@ -8,6 +8,23 @@ body {
     display: none;
 }
 
+
+a {
+    color: #000000;
+}
+
+a:hover { 
+    color: #ffffff;
+}
+
+a:visited { 
+    color: #ffffff;
+}
+    
+    
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+
 .center {
     margin: auto;
     padding: 10px;
@@ -24,21 +41,11 @@ body {
     bottom: 10px;
     padding-right:5px;
     text-align: right;
-    font-size: 5px;
+    font-size: 12px;
     margin-top: 1em;
     color: #262626;
 }
-
-a {
-    color: #000000;
-}
-
-a:visited { 
-    color: #ffffff;
-}
     
-    
-
 .title {
     font-size: 30px;
     margin-top: 1em;
@@ -94,5 +101,91 @@ button.analyze-button {
     font-size: 13px;
     color: #ffffff;
 }
+
+}
+
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+
+.center {
+    margin: auto;
+    padding: 10px;
+    padding-left:50px;
+    padding-right:50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.links {
+    position: fixed;
+    width: 50%;
+    bottom: 10px;
+    padding-right:5px;
+    text-align: right;
+    font-size: 24px;
+    margin-top: 1em;
+    color: #262626;
+}
+    
+.title {
+    font-size: 60px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #262626;
+}
+
+.content {
+    margin-top: 2em;
+}
+
+.analyze {
+    margin-top: 2em;
+}
+
+.upload-label {
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.result-label {
+    margin-top: 0.5em;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.prob-label {
+    margin-top: 0.5em;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button.choose-file-button {
+  width: 200px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #705746;
+  border: solid 1.5px #000000;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+button.analyze-button {
+    width: 200px;
+    height: 40px;
+    border: solid 1.5px #000000;
+    border-radius: 2px;
+    background-color: #705746;
+    font-size: 26px;
+    color: #ffffff;       
+}
+
+}
+
 
 button:focus {outline:0;}
