@@ -46,6 +46,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+.prob-label {
+    margin-top: 0.5em;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
 button.choose-file-button {
   width: 200px;
   height: 40px;
