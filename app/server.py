@@ -57,10 +57,10 @@ async def analyze(request):
     img_bytes = await (data['file'].read())
     img = open_image(BytesIO(img_bytes))
     prediction, _ , prob = learn.predict(img)
-    classprob='{} ('.format(prediction)
+    classprob='('
     for cl, p in zip(classes,prob):
           classprob='{}{}: {:.1f}%,  '.format(classprob,cl,100*p.item())
-    return JSONResponse({'result': classprob[:-3]+')'})
+    return JSONResponse({'result': str(prediction), 'probabilites': classprob[:-3]+')'})
 
 if __name__ == '__main__':
     if 'serve' in sys.argv: uvicorn.run(app=app, host='0.0.0.0', port=5042)
