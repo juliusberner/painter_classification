@@ -26,7 +26,7 @@ function analyze() {
             var response = JSON.parse(e.target.responseText);
             el('result-label').innerHTML = `Predicted result = ${response['result']}`;
         }
-        el('analyze-button').innerHTML = 'Analyze';
+        el('analyze-button').innerHTML = 'Analyze the painting';
     }
 
     var fileData = new FormData();
