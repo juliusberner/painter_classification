@@ -25,6 +25,7 @@ function analyze() {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
             el('result-label').innerHTML = `Predicted result = ${response['result']}`;
+            el('prob-label').innerHTML = `${response['probabilites']}`;
         }
         el('analyze-button').innerHTML = 'Analyze the painting';
     }
