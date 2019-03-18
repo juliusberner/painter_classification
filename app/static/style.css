@@ -18,6 +18,18 @@ body {
     font-size: 15px;
 }
 
+.links {
+    font-size: 10px;
+    margin-top: 1em;
+    color: #262626;
+}
+
+a:visited { 
+  color: #ffffff;
+}
+    
+    
+
 .title {
     font-size: 30px;
     margin-top: 1em;
