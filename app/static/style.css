@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Butterfly+Kids|Roboto');
+
 body {
     background-color: #96757e;
 }
@@ -12,6 +14,7 @@ body {
     padding-left:50px;
     padding-right:50px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
@@ -33,12 +36,14 @@ body {
 .upload-label {
     padding: 10px;
     font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .result-label {
     margin-top: 0.5em;
     padding: 10px;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 button.choose-file-button {
